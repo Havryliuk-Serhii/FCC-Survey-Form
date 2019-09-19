@@ -14,6 +14,7 @@
         We want to know about you
         </p>
         <form id="survey-form" method="GET" action="">
+            <h2>Personal data</h2>
         <div class="rowTab">
         <div class="labels">
         <label id="name-label" for="name">* Name: </label>
@@ -32,12 +33,19 @@
         </div>
         <div class="rowTab">
         <div class="labels">
-        <label id="number-label" for="age">* Age: </label>
+        <label id="number-label" for="date">Date of birth: </label>
         </div>
         <div class="rightTab">
-        <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age">
+        <input type="number" name="day" id="number" min="1" max="31" class="input-field" placeholder="Day">
         </div>
+        <div class="rightTab">
+            <input type="number" name="month" id="number" min="1" max="12" class="input-field" placeholder="Month">
+            </div>
+            <div class="rightTab">
+                <input type="number" name="year" id="number" min="1950" max="2019" class="input-field" placeholder="Year">
+                </div>
         </div>
+        <h2>General information</h2>
         <div class="rowTab">
         <div class="labels">
         <label for="currentPos">Which option best describes your current role?</label>
