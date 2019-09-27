@@ -22,7 +22,16 @@ p {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     }
-	
+
+ul{
+    list-style: none;
+}    
+
+textarea{
+    height:50px;
+    resize:vertical;
+}    
+
 #form-main{
 	background-color: #a9d7d1;
     margin: 0 auto;
