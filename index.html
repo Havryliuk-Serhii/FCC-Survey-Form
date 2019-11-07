@@ -1,168 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>FCC: Survey form</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <h1 id="title">Survey form for resume</h1>
-    <p id="description">We want to know about you</p>
-    <div id="form-main">
-        <form action="" id="survey-form" method="GET">
-            <h2>Personal data</h2>
-            <div class="formSection">
-                <div class="formLabel">
-                    <label id="name-label" for="name">Name: </label>
-                </div>
-                <div class="formTab">
-                    <input autofocus="" type="text" name="name" id="name" class="input-field"
+    <div class="container">
+        <header class="header">
+            <div class="text-center">
+               <h1 id="title">Survey form for resume</h1>
+                <p id="description">We want to know about you</p>
+            </div>
+        </header>
+        <div id="form-main">
+            <form action="#" id="survey-form" method="GET">
+                <div class="text-center">
+                    <h2>Personal data</h2>
+                </div>    
+                    <div class="row flex-row">
+                        <div class="col-6">
+                            <div class="formLabel">
+                            <label id="name-label" for="name">Name: </label>
+                            </div>  
+                        </div>
+                        <div class="col-6">
+                            <div class="formTab">
+                                <input autofocus="" type="text" name="name" id="name" class="input-field"
                         placeholder="Enter your name" required="">
-                </div>
-            </div>
-            <div class="formSection">
-                <div class="formLabel">
-                    <label id="email-label" for="email">Email: </label>
-                </div>
-                <div class="formTab">
-                    <input type="email" name="email" id="email" class="input-field" required=""
-                        placeholder="Enter your Email">
-                </div>
-            </div>
-            <div class="formSection">
-                <div class="formLabel">
-                    <label id="number-label" for="date">Date of birth: </label>
-                </div>
-                <div class="formTab">
-                    <input type="number" name="day" id="number" min="1" max="31" class="input-field" placeholder="Day">
-                </div>
-                <div class="formTab">
-                    <input type="number" name="month" id="number" min="1" max="12" class="input-field"
-                        placeholder="Month">
-                </div>
-                <div class="formTab">
-                    <input type="number" name="year" id="number" min="1950" max="2019" class="input-field"
-                        placeholder="Year">
-                </div>
-            </div>
-            <h2>General information</h2>
-            <div class="formSection">
-                <div class="formLabel">
-                    <label for="currentPos">The position you want to work for</label>
-                </div>
-                <div class="formTab">
-                    <input autofocus="" type="text" name="jobPosition" id="jobPosition" class="input-field"
-                        placeholder="Enter your position to work" required="">
-                </div>
-                <div class="formSection">
-                    <div class="formLabel">
-                        <label for="employment">Type of employment: </label>
+                            </div>
+                        </div>
                     </div>
-                    <div class="formTab">
-                        <select id="dropdown" name="employment" class="dropdown">
+                    <div class="row flex-row">
+                        <div class="col-6">
+                            <div class="formLabel">
+                            <label id="email-label" for="email">Email: </label>
+                            </div>  
+                        </div>
+                        <div class="col-6">
+                            <div class="formTab">
+                                <input type="email" name="email" id="email" class="input-field" required=""
+                        placeholder="Enter your Email">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row flex-row">
+                        <div class="col-6">
+                            <div class="formLabel">
+                            <label id="number-label">Date of birth: </label>
+                            </div>  
+                        </div>
+                        <div class="col-6">
+                            <div class="formTab">
+                                <input type="number" name="day" id="day" min="1" max="31" class="input-field" placeholder="Day">
+                                <input type="number" name="month" id="month" min="1" max="12" class="input-field"
+                        placeholder="Month">
+                            <input type="number" name="year" id="number" min="1950" max="2019" class="input-field"
+                        placeholder="Year">
+                            </div>
+                        </div>
+                    </div>
+                <div class="text-center">
+                    <h2>General information</h2>
+                </div>   
+                <div class="row flex-row">
+                    <div class="col-6">
+                        <div class="formLabel">
+                          <label>The position you want to work for :</label> 
+                        </div>  
+                    </div>
+                    <div class="col-6">
+                         <div class="formTab">
+                            <input type="text" name="jobPosition" id="jobPosition" class="input-field"
+                        placeholder="Enter your position to work" required="">
+                        </div> 
+                    </div>
+                </div>
+                <div class="row flex-row">
+                    <div class="col-6">
+                        <div class="formLabel">
+                            <label>Experience: </label>
+                        </div>  
+                    </div>
+                    <div class="col-6">
+                         <div class="formTab flex-column">
+                            <div class="row">
+                                <input  id="no-experience" name="experience" value="no-experience" type="radio" class="input-radio" checked=""><lable for="no-experience">I have no work experience</lable>
+                            </div>
+                            <div class="row">
+                                <input id="less-year" name="experience" value="less-year" type="radio" class="input-radio" checked=""><lable for="less-year">Less 1 year</lable>
+                            </div>
+                            <div class="row">
+                                <input id="middle-experience" name="experience" value="middle-experience" type="radio" class="input-radio" checked=""><lable for="middle-experience">1-5 years</lable>
+                            </div>
+                            <div class="row">
+                                 <input id="high-experience" name="experience" value="high-experience" type="radio" class="input-radio" checked=""><lable for="high-experience">More 5 years</lable>
+                            </div>   
+                        </div> 
+                    </div>
+                </div>
+                <div class="row flex-row">
+                    <div class="col-6">
+                        <div class="formLabel">
+                           <label>Type of employment: </label>
+                        </div>  
+                    </div>
+                    <div class="col-6">
+                         <div class="formTab">
+                           <select id="dropdown" name="employment" class="dropdown">
                             <option disabled="" selected="" value="">Select an option</option>
                             <option value="full-time">Full employment</option>
                             <option value="under">Underemployment</option>
                             <option value="remote">Remote</option>
                         </select>
+                        </div> 
                     </div>
                 </div>
-                <div class="formSection">
-                    <div class="formLabel">
-                        <label for="placement">Category for placement:</label>
-                    </div>
-                    <div class="formTab">
-                        <ul id="placement">
-                            <li class="checkbox"><label><input name="placement" value="1" type="checkbox"
-                                        class="categoryPlace"></label>Business Services</li>
-                            <li class="checkbox"><label><input name="placement" value="2" type="checkbox"
-                                        class="categoryPlace"></label>Sale, purchase</li>
-                            <li class="checkbox"><label><input name="placement" value="3" type="checkbox"
-                                        class="categoryPlace"></label>Work specialties, production</li>
-                            <li class="checkbox"><label><input name="placement" value="4" type="checkbox"
-                                        class="categoryPlace"></label>IT, computers, internet</li>
-                            <li class="checkbox"><label><input name="placement" value="5" type="checkbox"
-                                        class="categoryPlace"></label>Retailing</li>
-                            <li class="checkbox"><label><input name="placement" value="6" type="checkbox"
-                                        class="categoryPlace"></label>Logistics, warehouse</li>
-                            <li class="checkbox"><label><input name="placement" value="7" type="checkbox"
-                                        class="categoryPlace"></label>Hotel and restaurant business, tourism</li>
-                            <li class="checkbox"><label><input name="placement" value="8" type="checkbox"
-                                        class="categoryPlace"></label>Administration, middle management</li>
-                            <li class="checkbox"><label><input name="placement" value="9" type="checkbox"
-                                        class="categoryPlace"></label>Accounting, Audit </li>
-                            <li class="checkbox"><label><input name="placement" value="10" type="checkbox"
-                                        class="categoryPlace"></label>Secretariat, Registry</li>
-                            <li class="checkbox"><label><input name="placement" value="11" type="checkbox"
-                                        class="categoryPlace"></label>Marketing, Advertising, PR</li>
-                            <li class="checkbox"><label><input name="placement" value="12" type="checkbox"
-                                        class="categoryPlace"></label>Transport, Auto</li>
-                            <li class="checkbox"><label><input name="placement" value="13" type="checkbox"
-                                        class="categoryPlace"></label>Construction, architecture </li>
-                            <li class="checkbox"><label><input name="placement" value="14" type="checkbox"
-                                        class="categoryPlace"></label>Telecommunications</li>
-                            <li class="checkbox"><label><input name="placement" value="15" type="checkbox"
-                                        class="categoryPlace"></label>Finance, Bank</li>
-                            <li class="checkbox"><label><input name="placement" value="16" type="checkbox"
-                                        class="categoryPlace"></label>Medicine and Pharmaceuticals </li>
-                            <li class="checkbox"><label><input name="placement" value="17" type="checkbox"
-                                        class="categoryPlace"></label>Education, Science </li>
-                            <li class="checkbox"><label><input name="placement" value="18" type="checkbox"
-                                        class="categoryPlace"></label>Beauty, fitness, sports</li>
-                            <li class="checkbox"><label><input name="placement" value="19" type="checkbox"
-                                        class="categoryPlace"></label>Media, publishing, printing</li>
-                            <li class="checkbox"><label><input name="placement" value="20" type="checkbox"
-                                        class="categoryPlace"></label>Design, Creativity </li>
-                            <li class="checkbox"><label><input name="placement" value="21" type="checkbox"
-                                        class="categoryPlace"></label>HR management</li>
-                            <li class="checkbox"><label><input name="placement" value="22" type="checkbox"
-                                        class="categoryPlace"></label>Security, safety</li>
-                            <li class="checkbox"><label><input name="placement" value="23" type="checkbox"
-                                        class="categoryPlace"></label>Top management, senior management</li>
-                            <li class="checkbox"><label><input name="placement" value="24" type="checkbox"
-                                        class="categoryPlace"></label>Jurisprudence</li>
-                            <li class="checkbox"><label><input name="placement" value="25" type="checkbox"
-                                        class="categoryPlace"></label>Culture, music, show business</li>
-                            <li class="checkbox"><label><input name="placement" value="26" type="checkbox"
-                                        class="categoryPlace"></label>Agriculture, agribusiness</li>
-                            <li class="checkbox"><label><input name="placement" value="27" type="checkbox"
-                                        class="categoryPlace"></label>Real Estate</li>
-                            <li class="checkbox"><label><input name="placement" value="28" type="checkbox"
-                                        class="categoryPlace"></label>Insurance</li>
-                        </ul>
-                    </div>
+                <div class="text-center">
+                    <span>Category for placement:</span>
                 </div>
-                <div class="formSection">
-                    <div class="formLabel">
-                        <label for="employment">Experience: </label>
+                <div class="row">  
+                    <div class="col-6">
+                        <div class="formTab flex-column">
+                            <label><input name="placement" value="1" type="checkbox" class="input-checkbox">Business Services</label>
+                            <label><input name="placement" value="2" type="checkbox" class="input-checkbox">Sale, purchase</label>
+                            <label><input name="placement" value="3" type="checkbox" class="input-checkbox">Work specialties, production</label>
+                            <label><input name="placement" value="4" type="checkbox" class="input-checkbox">IT, computers, internet</label>
+                            <label><input name="placement" value="5" type="checkbox" class="input-checkbox">Retailing</label>
+                            <label><input name="placement" value="6" type="checkbox" class="input-checkbox">Logistics, warehouse</label>
+                            <label><input name="placement" value="7" type="checkbox" class="input-checkbox">Hotel and restaurant business, tourism</label>
+                            <label><input name="placement" value="8" type="checkbox" class="input-checkbox">Administration, middle management</label>
+                            <label><input name="placement" value="9" type="checkbox" class="input-checkbox">Accounting, Audit </label>
+                            <label><input name="placement" value="10" type="checkbox" class="input-checkbox">Secretariat, Registry</label>
+                            <label><input name="placement" value="11" type="checkbox" class="input-checkbox">Marketing, Advertising, PR</label>
+                            <label><input name="placement" value="12" type="checkbox" class="input-checkbox">Transport, Auto</label>
+                            <label><input name="placement" value="13" type="checkbox" class="input-checkbox">Construction, architecture</label>
+                            <label><input name="placement" value="14" type="checkbox" class="input-checkbox">Telecommunications</label>
+                        </div>
+                    </div>    
+                    <div class="col-6">
+                        <div class="formTab flex-column">
+                            <label><input name="placement" value="15" type="checkbox" class="input-checkbox">Finance, Bank</label>
+                            <label><input name="placement" value="16" type="checkbox" class="input-checkbox">Medicine and Pharmaceuticals</label>
+                            <label><input name="placement" value="17" type="checkbox" class="input-checkbox">Education, Science </label>
+                            <label><input name="placement" value="18" type="checkbox" class="input-checkbox">Beauty, fitness, sports</label>
+                            <label><input name="placement" value="19" type="checkbox" class="input-checkbox">Media, publishing, printing</label>
+                            <label><input name="placement" value="20" type="checkbox" class="input-checkbox">Design, Creativity </label>
+                            <label><input name="placement" value="21" type="checkbox" class="input-checkbox">HR management</label>
+                            <label><input name="placement" value="22" type="checkbox" class="input-checkbox">Security, safety</label>
+                            <label><input name="placement" value="23" type="checkbox" class="input-checkbox">Top management, senior management</label>
+                            <label><input name="placement" value="24" type="checkbox" class="input-checkbox">Jurisprudence</label>
+                            <label><input name="placement" value="25" type="checkbox" class="input-checkbox">Culture, music, show business</label>
+                            <label><input name="placement" value="26" type="checkbox" class="input-checkbox">Agriculture, agribusiness</label>
+                            <label><input name="placement" value="27" type="checkbox" class="input-checkbox">Real Estate</label>
+                            <label><input name="placement" value="28" type="checkbox" class="input-checkbox">Insurance</label>
+                        </div>                     
                     </div>
-                    <div class="formTab">
-                        <select id="experience" name="experience" class="dropdown">
-                            <option disabled="" selected="" value="">Select an option</option>
-                            <option value="noExperience">I have no work experience</option>
-                            <option value="lessYear">Less 1 year</option>
-                            <option value="middleYear">1-5 years</option>
-                            <option value="moreYear">More 5 years</option>
-                        </select>
-                    </div>
+                </div>                       
+                <div class="text-center"><span class="achievements">Responsibilities and achievements on this position:</span>
+                </div>                
+                <div class="row flex-row">
+                    <div class="formTab-bg">
+                        <textarea id="achievements" class="input-textarea" name="achievements" placeholder="Enter your text here..."></textarea>
+                    </div> 
                 </div>
-            </div>
-            <div class="formSection">
-                <div class="formLabel">
-                    <label for="achievements">Responsibilities and achievements on this position:</label>
-                </div>
-                <div class="formTab">
-                    <textarea id="achievements" class="input-field" name="achievements" placeholder="Enter your text here..."></textarea>
-                </div>
-            </div>
-            <button id="submit" type="submit">Submit</button>
-        </form>
+                    <button id="submit" type="submit" class="submit-button">Submit</button>                
+            </form>
+        </div>
     </div>
 </body>
-
 </html>

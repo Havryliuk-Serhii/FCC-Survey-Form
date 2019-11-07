@@ -1,3 +1,6 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
 html, body {
     background-color: #fff;
     text-align: center;
@@ -6,7 +9,6 @@ html, body {
 	}
 
 h1 {
-    display: block;
     font-size: 3em;
     margin-block-start: 0.67em;
     margin-block-end: 0.67em;
@@ -14,9 +16,12 @@ h1 {
     margin-inline-end: 0px;
     font-weight: bold;
     }
+
+h2{
+    font-size: 2em;
+}    
 	
 p {
-    display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
@@ -26,52 +31,6 @@ p {
 ul{
     list-style: none;
 }    
-
-div {
-    display: block;
-}
-
-textarea{
-    height:50px;
-    resize:vertical;
-}    
-
-#form-main{
-	background-color: #a9d7d1;
-    margin: 0 auto;
-    border-radius: 5px;
-    width: 90%;
-    max-width: 960px;
-    padding: 10px;
-    }
-
-.formSection{
-display: block;
-}
-
-.formLabel{
-display: inline-block;
-text-align: left;
-width: 40%;
-padding: 5px;
-vertical-align: top;
-margin-top: 10px;
-}
-
-.formTab{
-    display: inline-block;
-    text-align: center;
-    width: 48%;
-    vertical-align: middle;
-}
-
-#name{
-display: block;
-}
-
-#email-label{
-display: block;
-}
 
 input {
     -webkit-writing-mode: horizontal-tb !important;
@@ -88,6 +47,162 @@ input {
     background-color: white;
     -webkit-rtl-ordering: logical;
     cursor: text;
-    font: 400 13.3333px Arial;
-    
+    font: 400 14px Arial;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+select{
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    -webkit-appearance: textfield;
+    background-color: white;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    font: 400 15px Arial;
+    margin: 0 5px;
+    border-radius: 5px;
+
+}
+
+option{
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align:center;
+    -webkit-appearance: textfield;
+    background-color: white;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    font: 400 14px Arial;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+
+label {
+    display: flex;
+    font-size: 1em;
+    align-items: baseline;
+    margin-top: 0.5rem;
+
+}
+
+input[type="checkbox" i] {
+    -webkit-appearance: checkbox;
+    cursor: pointer;
+}
+
+input[type="radio" i] {
+   -webkit-appearance: radio;
+   cursor: pointer;
+}
+
+.input-radio, .input-checkbox {
+    display: inline-block;
+    margin-right: 0.625rem;
+    min-height: 1rem;
+    min-width: 1rem;
+}
+
+#form-main{
+    background-color: #a9d7d1;
+    margin: 0 auto;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 960px;
+    padding: 10px;
+}
+
+.formLabel{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-end;
+}
+
+.formTab{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+   
+
+}
+
+.flex-row{
+    align-items: baseline;
+}
+
+.flex-column{
+    align-items: baseline;
+}
+.input-radio{
+   display: -webkit-flex;
+   display: -moz-flex;
+   display: -ms-flex;
+   display: -o-flex;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content:flex-start;
+   align-items: baseline;
+}
+
+.text-center{
+    margin: 10px;
+}
+
+span{
+font-size: 1.125rem;
+}
+
+.formTab-bg{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 100%;   
+}
+
+
+.input-textarea {
+    min-height: 120px;
+    width: 90%;
+    margin: 0 5%;
+    padding: 0.625rem;
+    resize: none;
+    border-radius: 5px;
+}
+
+.submit-button {
+    display: block;
+    width: 90%;
+    margin: 5%;
+    padding: 0.75rem;
+    background: blue;
+    color: inherit;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
 }
